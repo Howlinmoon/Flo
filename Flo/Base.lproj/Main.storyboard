@@ -32,10 +32,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-Vm-qCh" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
+                                <rect key="frame" x="275" y="480" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y0V-GA-0dN"/>
+                                    <constraint firstAttribute="width" constant="50" id="ZQ7-bT-NAI"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.93333333333333335" green="0.30196078431372547" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2Bo-Vm-qCh" firstAttribute="top" secondItem="DAM-3H-hmW" secondAttribute="bottom" constant="30" id="LBY-Xe-ERd"/>
                             <constraint firstAttribute="centerX" secondItem="DAM-3H-hmW" secondAttribute="centerX" id="Rcg-3t-hgv"/>
+                            <constraint firstAttribute="centerX" secondItem="2Bo-Vm-qCh" secondAttribute="centerX" id="dAs-UF-2z1"/>
                             <constraint firstAttribute="centerY" secondItem="DAM-3H-hmW" secondAttribute="centerY" constant="-100" id="trn-4T-W0n"/>
                         </constraints>
                     </view>
