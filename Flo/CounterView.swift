@@ -19,7 +19,7 @@ let π:CGFloat = CGFloat(M_PI)
     
 
     override func drawRect(rect: CGRect) {
-        // Drawing code
+        // Drawing the Arc
         // 1
         let center = CGPoint(x:bounds.width/2, y:bounds.height/2)
         
@@ -45,6 +45,37 @@ let π:CGFloat = CGFloat(M_PI)
         counterColor.setStroke()
         path.stroke()
         
+        // Draw the outline around the arc
+        //1 first calculate the difference between the two angles
+        // ensuring that it is positive
+        let angleDifference: CGFloat = 2 * π - startAngle + endAngle
+        
+        // then calculate the arc for each single glass
+        let arcLengthPerGlass = angleDifference / CGFloat(noOfGlasses)
+        
+        // then multiply out by the actual glasses drank
+        let outlineEndAngle = arcLengthPerGlass * CGFloat(counter) + startAngle
+        
+        //2 - draw the outer arc
+        var outlinePath = UIBezierPath(arcCenter: center,
+            radius: bounds.width/2 - 2.5,
+            startAngle: startAngle,
+            endAngle: outlineEndAngle,
+            clockwise: true)
+        
+        //3 - draw the inner arc
+        outlinePath.addArcWithCenter(center,
+            radius: bounds.width/2 - arcWidth + 2.5,
+            startAngle: outlineEndAngle,
+            endAngle: startAngle,
+            clockwise: false)
+        
+        //4 close the path
+        outlinePath.closePath()
+        
+        outlineColor.setStroke()
+        outlinePath.lineWidth = 5.0
+        outlinePath.stroke()
     }
 
 }
