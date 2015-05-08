@@ -6,6 +6,10 @@
 //  Copyright (c) 2015 Jim Veneskey. All rights reserved.
 //
 
+//Counter outlets
+@IBOutlet weak var counterView: CounterView!
+@IBOutlet weak var counterLabel: UILabel!
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -13,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        counterLabel.text = String(counterView.counter)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +26,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func btnPushButton(button: PushButtonView) {
+        if button.isAddButton {
+            counterView.counter++
+        } else {
+            if counterView.counter > 0 {
+                counterView.counter--
+            }
+        }
+        counterLabel.text = String(counterView.counter)
+    }
+    
 }
 

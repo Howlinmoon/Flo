@@ -31,6 +31,9 @@
                                         <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83526932565789469" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pRc-fU-225"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-Vm-qCh" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
                                 <rect key="frame" x="275" y="480" width="50" height="50"/>
@@ -47,14 +50,36 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6vp-0p-fl8"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTs-4d-MSP" customClass="CounterView" customModule="Flo" customModuleProvider="target">
                                 <rect key="frame" x="185" y="70" width="230" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thd-Ww-bAG">
+                                        <rect key="frame" x="93" y="93" width="44" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="RSr-Cb-jtR"/>
                                     <constraint firstAttribute="height" constant="230" id="YYe-o2-AnY"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -67,6 +92,9 @@
                             <constraint firstAttribute="centerY" secondItem="DAM-3H-hmW" secondAttribute="centerY" constant="-100" id="trn-4T-W0n"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="view" destination="thd-Ww-bAG" id="jSo-rI-M5k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
