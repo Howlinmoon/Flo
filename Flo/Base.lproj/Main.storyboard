@@ -16,62 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAM-3H-hmW" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It5-XE-K5b" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
                                 <rect key="frame" x="250" y="350" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="7jf-6w-WJc"/>
-                                    <constraint firstAttribute="width" constant="100" id="D4L-sS-MeK"/>
+                                    <constraint firstAttribute="height" constant="100" id="RSt-jQ-xDj"/>
+                                    <constraint firstAttribute="width" constant="100" id="mEf-7E-nzx"/>
                                 </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83526932565789469" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pRc-fU-225"/>
+                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LaK-SF-YaQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-Vm-qCh" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
-                                <rect key="frame" x="275" y="480" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Y0V-GA-0dN"/>
-                                    <constraint firstAttribute="width" constant="50" id="ZQ7-bT-NAI"/>
-                                </constraints>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.93333333333333335" green="0.30196078431372547" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6vp-0p-fl8"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTs-4d-MSP" customClass="CounterView" customModule="Flo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Dp-sF-9ER" customClass="CounterView" customModule="Flo" customModuleProvider="target">
                                 <rect key="frame" x="185" y="70" width="230" height="230"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thd-Ww-bAG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdM-t7-jWB">
                                         <rect key="frame" x="93" y="93" width="44" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="RSr-Cb-jtR"/>
-                                    <constraint firstAttribute="height" constant="230" id="YYe-o2-AnY"/>
+                                    <constraint firstAttribute="width" constant="230" id="3VD-EV-y6b"/>
+                                    <constraint firstAttribute="height" constant="230" id="rNp-mb-85j"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="counter">
-                                        <integer key="value" value="3"/>
+                                        <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
                                         <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -81,24 +62,43 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNo-Vx-ua6" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
+                                <rect key="frame" x="275" y="480" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SdT-eq-AD8"/>
+                                    <constraint firstAttribute="width" constant="50" id="q4z-f7-Ct8"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.93333333333333335" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPushButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="O1U-O3-8ed"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DAM-3H-hmW" firstAttribute="top" secondItem="PTs-4d-MSP" secondAttribute="bottom" constant="50" id="1M4-4q-v9e"/>
-                            <constraint firstAttribute="centerX" secondItem="PTs-4d-MSP" secondAttribute="centerX" id="CW8-to-Hlh"/>
-                            <constraint firstItem="2Bo-Vm-qCh" firstAttribute="top" secondItem="DAM-3H-hmW" secondAttribute="bottom" constant="30" id="LBY-Xe-ERd"/>
-                            <constraint firstAttribute="centerX" secondItem="DAM-3H-hmW" secondAttribute="centerX" id="Rcg-3t-hgv"/>
-                            <constraint firstAttribute="centerX" secondItem="2Bo-Vm-qCh" secondAttribute="centerX" id="dAs-UF-2z1"/>
-                            <constraint firstAttribute="centerY" secondItem="DAM-3H-hmW" secondAttribute="centerY" constant="-100" id="trn-4T-W0n"/>
+                            <constraint firstAttribute="centerX" secondItem="It5-XE-K5b" secondAttribute="centerX" id="IKM-KD-zBc"/>
+                            <constraint firstAttribute="centerX" secondItem="7Dp-sF-9ER" secondAttribute="centerX" id="Zk3-6f-Rvw"/>
+                            <constraint firstItem="It5-XE-K5b" firstAttribute="top" secondItem="7Dp-sF-9ER" secondAttribute="bottom" constant="50" id="dqo-al-A6e"/>
+                            <constraint firstAttribute="centerY" secondItem="pNo-Vx-ua6" secondAttribute="centerY" constant="-205" id="fkj-z7-QZB"/>
+                            <constraint firstAttribute="centerX" secondItem="pNo-Vx-ua6" secondAttribute="centerX" id="p5d-gj-PRm"/>
+                            <constraint firstAttribute="centerY" secondItem="It5-XE-K5b" secondAttribute="centerY" constant="-100" id="uCJ-S8-BWm"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="view" destination="thd-Ww-bAG" id="jSo-rI-M5k"/>
+                        <outlet property="counterLabel" destination="rdM-t7-jWB" id="GBX-Hy-toS"/>
+                        <outlet property="counterView" destination="7Dp-sF-9ER" id="9BV-Uv-AjO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="534" y="330"/>
         </scene>
     </scenes>
 </document>
