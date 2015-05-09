@@ -163,7 +163,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = "Caroline Begbie";
+				ORGANIZATIONNAME = "Jim Veneskey";
 				TargetAttributes = {
 					827B3CAA1ADE121D00E4AA19 = {
 						CreatedOnToolsVersion = 6.3;
@@ -417,6 +417,7 @@
 				827B3CCC1ADE121D00E4AA19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		827B3CCD1ADE121D00E4AA19 /* Build configuration list for PBXNativeTarget "FloTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				827B3CCF1ADE121D00E4AA19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
